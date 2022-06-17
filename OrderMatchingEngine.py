@@ -10,8 +10,7 @@ class OrderMatchingEngine(object):
     orderBook = OrderBook.OrderBook()
 
     def __init__(self):
-        # Required persistent state may be implemented at the class level.
-        # You are also encouraged to create other classes/external functions of your own if necessary.
+        
         pass
 
     def clearOrders(self, orderBook):
@@ -28,8 +27,6 @@ class OrderMatchingEngine(object):
         elif tradeRequest[1] < 0:
             orderBook.newSellOrder(tradeRequest)
 
-    def ExecuteTrade(self, quantity, price, buyOrderId, sellOrderId):
-        pass
 
     def testNoMatch(self):
         orderBook1 = OrderBook.OrderBook()
